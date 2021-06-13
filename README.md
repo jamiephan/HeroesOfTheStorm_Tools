@@ -24,8 +24,9 @@ Also this tool is mainly for my personal uses so it might not work for you.
 
 1. Make sure you have the following requirements installed:
 
- - WSL (Windows Subsystem on Linux)
- - Java (installed on Windows, not in WSL) and should be in `%PATH%` (e.g, running `where java` in cmd should shows path of java)
+ - Java
+
+>Note: If you have Java installed on your Windows and having WSL (WSL does not have java), please use the `schemaGenerator_WSL.sh` file instead, and of course change the commands below from `schemaGenerator.sh` to `schemaGenerator_WSL.sh`.
 
 2. Extract all the game files with [CASCView](http://www.zezula.net/en/casc/main.html)
 
@@ -38,7 +39,7 @@ CASCOutput/
     └── trang.jar
 ```
 
-4. In WSL, on the folder, run the following command:
+4. In terminal (or WSL), at the extracted folder, run the following command:
 
 ```bash
 chmod +x schemaGenerator.sh
