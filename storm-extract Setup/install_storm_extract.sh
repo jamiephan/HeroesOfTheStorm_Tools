@@ -24,6 +24,7 @@ cd build
 cmake ..
 make
 cd bin
-sudo cp * /usr/bin/
+sudo cp *so* /usr/lib/
+sudo cp storm-extract /usr/bin/
 cd ~
 rm -rf storm-extract
